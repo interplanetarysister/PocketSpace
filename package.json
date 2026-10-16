@@ -1,0 +1,20 @@
+{
+  "name": "pocketspace-quest",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "PocketSpace for Meta Quest — WebXR + cross-device public sharing prototype",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "wrangler dev",
+    "check": "node --check src/worker.mjs",
+    "test": "node --test",
+    "deploy:staging": "wrangler deploy",
+    "deploy:production": "wrangler deploy --name pocketspace-quest-demo"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
